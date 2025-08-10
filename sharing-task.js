@@ -120,18 +120,8 @@ console.log(calculateEventCost(120, 50));
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
-const input = require('readline-sync');
-
 function isValidEmail(email) {
-    return email.includes("@") && email.includes(".");
+   return email.includes("@") && email.includes(".");
 }
 
-function getUserEmail() {
-    let email = input.question("Please enter an email: ");
-    while (isValidEmail(email) === false) {
-        input.question("Invalid email, please enter an email: ");
-    }
-    return console.log(`New email address: ${email}`);
-}
-
-getUserEmail();
+console.log(isValidEmail("studentemailcom"));
